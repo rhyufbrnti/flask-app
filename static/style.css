@@ -1,0 +1,90 @@
+/* ==== Background dan Body Styling ==== */
+body {
+    font-family: 'Oswald', sans-serif;
+    background: linear-gradient(to right, #0C356A, #0174BE);
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+/* ==== Gaya untuk Judul ==== */
+h1 {
+    font-size: 50px;
+    font-weight: 700;
+    font-family: 'Playfair Display', serif;
+    color: #FFC436;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* ==== Kartu Formulir ==== */
+.card {
+    width: 60%;
+    background: #FDFBEE;
+    color: #0C356A;
+    border-radius: 15px;
+    padding: 30px;
+    margin: auto;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* ==== Input dan Textarea ==== */
+.form-control {
+    font-size: 1.2rem;
+    padding: 12px;
+    border-radius: 8px;
+    border: 2px solid #0174BE;
+    transition: all 0.3s ease-in-out;
+}
+
+.form-control:focus {
+    border-color: #FFC436;
+    box-shadow: 0px 0px 12px rgba(255, 196, 54, 0.5);
+}
+
+/* ==== Tombol Kirim ==== */
+.btn-primary {
+    background: #FFC436;
+    border: none;
+    color: #0C356A;
+    font-size: 1.5rem;
+    padding: 12px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+    background: #FDFBEE;
+    color: #0C356A;
+    transform: scale(1.05);
+}
+
+/* ==== Kotak Hasil Input ==== */
+.hasil-input {
+    width: 60%;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    border-radius: 15px;
+    color: #0C356A;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* ==== Alert untuk Hasil Input ==== */
+.alert-custom {
+    background: #FFC436;
+    color: #0C356A;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: left;
+}
+
+/* ==== Animasi untuk Elemen ==== */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.card, .hasil-input {
+    animation: fadeIn 0.5s ease-in-out;
+}
